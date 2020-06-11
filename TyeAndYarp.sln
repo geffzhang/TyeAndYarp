@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api1", "Api1\Api1.csproj", "{CC840C0C-37DF-4E26-A278-6E59C1E0323C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api2", "Api2\api2.csproj", "{1E0D063E-0E22-4AD1-A922-B7AD08CBA0D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{A85D06CA-9F34-41E7-8ACC-9D8DE1A216C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC840C0C-37DF-4E26-A278-6E59C1E0323C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC840C0C-37DF-4E26-A278-6E59C1E0323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC840C0C-37DF-4E26-A278-6E59C1E0323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC840C0C-37DF-4E26-A278-6E59C1E0323C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0D063E-0E22-4AD1-A922-B7AD08CBA0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0D063E-0E22-4AD1-A922-B7AD08CBA0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0D063E-0E22-4AD1-A922-B7AD08CBA0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0D063E-0E22-4AD1-A922-B7AD08CBA0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85D06CA-9F34-41E7-8ACC-9D8DE1A216C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85D06CA-9F34-41E7-8ACC-9D8DE1A216C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85D06CA-9F34-41E7-8ACC-9D8DE1A216C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85D06CA-9F34-41E7-8ACC-9D8DE1A216C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51AB0514-B5CF-42CA-ABBB-1F1BEEF6901C}
+	EndGlobalSection
+EndGlobal

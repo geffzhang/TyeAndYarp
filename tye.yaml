@@ -1,0 +1,14 @@
+name: reverse-proxy-projects
+services:
+- name: api1
+  project: Api1/Api1.csproj
+  bindings:
+      - port: 5000
+- name: api2
+  project: Api2/Api2.csproj
+  bindings:
+      - port: 5010  
+- name: proxy
+  project: ReverseProxy/ReverseProxy.csproj
+  bindings:
+    - port: 5020   
