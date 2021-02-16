@@ -1,6 +1,6 @@
 # Install Global Tools
 ```
-dotnet tool install --global Microsoft.Tye --version 0.2.0-alpha.20258.3
+dotnet tool install/update --global Microsoft.Tye --version 0.6.0-alpha.21070.5
 ```
 
 # Using Tye Cli to Exec All Projects 
