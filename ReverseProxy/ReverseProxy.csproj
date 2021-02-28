@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ReverseProxy" Version="1.0.0-preview.8.21065.1" />
+    <PackageReference Include="Microsoft.ReverseProxy" Version="1.0.0-preview.9.21116.1" />
     <PackageReference Include="Microsoft.Tye.Extensions.Configuration" Version="0.6.0-alpha.21070.5" />
     <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.1" />
