@@ -38,7 +38,7 @@ namespace ReverseProxy {
                 endpoints.MapControllers ();
                 endpoints.MapReverseProxy (proxyPipeline => {
 
-                    proxyPipeline.UseProxyLoadBalancing ();
+                    proxyPipeline.UseLoadBalancing ();
                 });
                logger.LogWarning (Configuration.GetServiceUri ("api2")?.ToString());
                               logger.LogWarning (Configuration.GetServiceUri ("api1")?.ToString());
