@@ -1,5 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using ReverseProxy;
 using Serilog;
@@ -39,5 +40,9 @@ public class Program
                 {
                     webBuilder.UseStartup<Startup>();
                 })
+                .ConfigureAppConfiguration((_, builder) => 
+                   builder.AddYamlFile("yaml/appsettings.yaml", false, true)
+                   .AddDaprConfig()
+                )
                 .UseSerilog(); // <-- Add this line;
 }

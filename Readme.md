@@ -22,3 +22,4 @@ dotnet run -p ./ReverseProxy/ReverseProxy.csproj
 # Reference
 - https://github.com/dotnet/tye
 - https://github.com/microsoft/reverse-proxy
+- https://www.cnblogs.com/tky753/p/14676571.html

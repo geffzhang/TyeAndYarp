@@ -24,7 +24,8 @@ namespace ReverseProxy {
         public void ConfigureServices (IServiceCollection services) {
             services.AddControllers ();
             services.AddReverseProxy ()
-                .LoadFromConfig (Configuration.GetSection ("ReverseProxy"));
+                .LoadFromConfig (Configuration.GetSection ("Yarp"))
+                .AddTransforms<DaprTransformProvider>(); //加上自定义转换
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,10 @@
 name: reverse-proxy-projects
 extensions:
+  - name: dapr
+    components-path: "./components/"
+    config: dapr-config
+    exclude-placement-container: true
+    placement-port: 6050
   - name: zipkin
 services:
 - name: api1
@@ -19,3 +24,12 @@ services:
   bindings:
     - name: http
       containerPort: 9411
+ingress:
+  - name: ingress
+    rules:
+      - service: proxy
+        path: /
+    bindings:
+      - name: ingress
+        protocol: https
+        port: 44363 #对外端口
