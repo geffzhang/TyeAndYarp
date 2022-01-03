@@ -1,6 +1,6 @@
 # Install Global Tools
 ```
-dotnet tool install/update --global Microsoft.Tye --version 0.6.0-alpha.21070.5
+dotnet tool install/update -g Microsoft.Tye --version "0.10.0-alpha.21420.1"
 ```
 
 # Using Tye Cli to Exec All Projects 
@@ -11,9 +11,9 @@ or
 
 # Using dotnet   Cli to Exec All Projects 
 ```
-dotnet run -p ./Api1/Api1.csproj
-dotnet run -p ./Api2/Api2.csproj
-dotnet run -p ./ReverseProxy/ReverseProxy.csproj
+dotnet run --project ./Api1/Api1.csproj
+dotnet run --project ./Api2/Api2.csproj
+dotnet run --project ./ReverseProxy/ReverseProxy.csproj
 ```
 
 # Application Url

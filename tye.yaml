@@ -2,7 +2,7 @@ name: reverse-proxy-projects
 extensions:
   - name: dapr
     components-path: "./components/"
-    config: dapr-config
+    config: daprconfig
     exclude-placement-container: true
     placement-port: 6050
   - name: zipkin

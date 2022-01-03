@@ -6,16 +6,16 @@ Serilog:
   WriteTo:
     - Name: Console
 Yarp:
-  Routes:
-    - RouteId: r-module-master
-      ClusterId: dapr-sidecar
-      Match:
-        Path: api/api1/{**catch-all}
-      Metadata:
-        Dapr: method
-    - RouteId: r-module2-master
-      ClusterId: dapr-sidecar
-      Match:
-        Path: api/api2/{**catch-all}
-      Metadata:
-        Dapr: method
+  - Routes:
+    - r-module-master:
+        ClusterId: dapr-sidecar
+        Match:
+          Path: api/api1/{**catch-all}
+        Metadata:
+          Dapr: method
+    - r-module2-master:
+        ClusterId: dapr-sidecar
+        Match:
+          Path: api/api2/{**catch-all}
+        Metadata:
+          Dapr: method
